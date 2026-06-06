@@ -1,0 +1,21 @@
+:root{
+    --color-text: #1a1a1a;
+    --color-bg: #ffffff;
+}
+body {
+    font-family: Georgia, serif;
+    line-height: 1.6;
+    max-width: 65ch;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+h1 {
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 1rem;
+}
