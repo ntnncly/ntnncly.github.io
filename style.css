@@ -1,15 +1,29 @@
 :root{
     --color-text: #1a1a1a;
     --color-bg: #ffffff;
-    --font-serif: Georgia, "Times New Roman" serif;
+    --color-accent: #7a5c3e;
+    --font-serif: Georgia, "Times New Roman", serif;
     --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    --space-1: 0.5rem;
+    --space-2: 0.75rem;
+    --space-3: 1rem;
+    --space-4: 1.5rem;
+    --space-5: 2rem;
+    --space-6: 3rem;
+
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.25rem;
+    --text-xl: 2rem;
+    --text-2xl: 3rem;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --color-text: #e8e8e8;
         --color-bg: #1a1a1a;
+        --color-accent: #c9a875;
     }
 }
 
@@ -28,11 +42,34 @@ body > * {
     grid-column: 2;
 }
 
+.full-width{
+    grid-column: 1/ -1;
+}
+
+h1,
+p {
+    margin-top: 0;
+}
+
 h1 {
-    font-weight: 600;
-    font-family: var(--font-sans);
+    font-family: var(--font-serif);
+    font-weight: 400;
+    font-size: var(--text-xl);
+    line-height: 1.25;
+    margin-bottom: var(--space-2);
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
 }
 
 p {
-    margin-bottom: 1rem;
+    margin-bottom: var(--space-2);
 }
